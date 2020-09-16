@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+.tab-content{
+	display: none;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+.text-center{
+    text-align : center;
+}
+
+.tabs-container{
+    margin-bottom: 50px;
+}
+
+#ordersTable{
+    width : 100% !important;
+}
+
+.tabs li a{
+    font-weight : bold;
+}
+

@@ -1,0 +1,264 @@
+.banner-sec img{
+  width: 100%;
+}
+img{
+  max-width: 100%;
+}
+body{
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+input#fname {
+    width: 69%;
+    height: 40px;
+}
+button#addItem {
+    width: 30%;
+    border: 1px solid #000;
+    height: 40px;
+}
+/* The container */
+.cstm-check {
+  display: block;
+  position: relative;
+  padding: 2px 20px;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 10px 15px;
+  width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+/* Hide the browser's default checkbox */
+.box-sec .cstm-check input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  background-color: transparent;
+  width: 100%;
+  z-index: -1;
+}
+/* On mouse-over, add a grey background color */
+.cstm-check:hover input ~ .checkmark {
+  background-color: transparent;
+}
+/* When the checkbox is checked, add a blue background */
+.cstm-check input:checked ~ .checkmark {
+  background-color: #ccc;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.cstm-check input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.box-sec {
+    border: 1px solid #666666;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.box-sec form {
+    max-height: 250px;
+    overflow-y: auto;
+}
+input#fname::placeholder {
+    color: #ddd;
+    font-size: 17px;
+    padding: 5px;
+}
+.button-sec button {
+    width: 35%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.button-sec {
+   /* padding-top: 130px;*/
+    text-align: center;
+}
+.outer-box button {
+    border-radius: 5px !important;
+    padding: 2px 15px;
+}
+.button-sec button {
+    border-radius: 5px !important;
+}
+.col-lg-2.button-sec {
+    max-width: 10%;
+}
+.outer-box.col-lg-5 form {
+    padding-bottom: 4px;
+}
+p.noItemFound {
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+    text-align: center;
+    background: transparent;
+    font-size: 20px;
+}
+.error{
+    color: red;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 2px;
+}
+
+.success{
+    color: green;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 2px;
+}
+
+.loader-sec,.custom-loader {
+    background-color: rgba(0,0,0,0.4);
+    height: 100vh;
+    vertical-align: middle;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.loader,.customLoader {
+  border: 8px solid #FF6E20;
+  border-radius: 50%;
+  border-top: 13px solid #FFFFFF;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1.2s linear infinite; /* Safari */
+  animation: spin 1.2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  transform: translate(-50%);
+}
+
+
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.left-sec {
+    text-align: center;
+}
+.left-sec p {
+    font-size: 22px;
+    font-weight: 700;
+}
+.left-sec li {
+    list-style: none;
+    font-size: 29px;
+    font-weight: 800;
+    color: #fff;
+}
+.terms-sec {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.terms-sec span {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+}
+.terms-sec {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100%;
+    background-size: cover;
+    padding-top: 40px;
+}
+.right-sec h3 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.right-sec input {
+    width: 50%;
+    margin: 0 0 15px;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #ff7a00;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+}
+::placeholder { 
+  color: #fff;
+}
+.left-sec img {
+    padding: 20px;
+}
+.right-sec button {
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 25px;
+    border: 0;
+}
+
+
+@media (min-width:1024px) and (max-width:1440px){
+    .right-sec input {
+    width: 80%;
+}
+.right-sec h3 {
+    font-size: 34px;
+    padding-bottom: 5px;
+}
+}
+@media (min-width:375px) and (max-width:767px){
+.left-sec li {
+    font-size: 16px;
+}
+.right-sec input {
+    width: 80%;
+}
+.left-sec ul {
+    padding: 0;
+}
+.right-sec h3 {
+    font-size: 30px;
+    padding-bottom:5px;
+}
+
+}
